@@ -1,0 +1,531 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: white;
+}
+
+header {
+    height: 700px;
+    margin-left: auto;
+}
+
+nav {
+    background: rgb(46, 46, 45);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    z-index: 99;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+
+}
+
+li {
+    line-height: 60px;
+}
+
+ul li:hover {
+    background: rgb(248, 225, 17);
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 19px;
+    margin: auto;
+
+}
+
+#img1 {
+    margin-left: 20px;
+}
+
+#headercontainer {
+    width: 100%;
+    height: 700px;
+    background: rgb(248, 225, 17);
+    position: relative;
+}
+
+#headerimg {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    clip-path: circle(56% at 50% 16%);
+}
+
+#searchContainer{
+    position: fixed;
+    display: flex;
+    width: 240px;
+    height: 50px;
+    z-index: 999;
+    left: -187px;
+    top: 40%;
+    background-color: black;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    transition: all 1s;
+}
+#searchBtn{
+    height: 25px;
+    align-self: flex-end;
+}
+
+#btn3{
+    width: 240px;
+    height: 50px;
+    background-image: url(../images/iconfinder_search_326690.png);
+    background-size: cover;
+    background-color: black;
+    width: 60px;
+    margin-left: 5px;
+}
+
+#searchContainer:hover{
+    left: 0px;
+}
+/***********************************************/
+
+
+#formContainer{
+    width: 40%;
+    height: 650px;
+    position: absolute;
+    top:-100px;
+    background: rgba(240, 243, 90,0.9);
+    border: 2px solid rgb(39, 26, 26);
+    border-radius: 5px;
+    z-index: 999;
+    overflow: hidden;
+    transition: all 1s;
+    opacity: 0;
+    display: none;
+    justify-content:space-around; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#formContainer:target{
+    opacity: 1;
+    top: 0;
+    
+    display: flex;
+}
+
+#formContainer #close{
+    position: relative;
+    top: 5px;
+    color: red;
+    text-decoration: none;
+    left: 100%;
+    font-size: 20px;
+
+}
+
+form{
+    width: 80%;
+}
+
+label{
+    margin-left: 10px;
+    font-weight: bold;
+ }
+
+form legend{
+    text-align: center;
+    color: rgb(56, 49, 38);
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+}
+
+.ch{
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    margin-left: 10px;
+}
+
+textarea{
+    width: 200px;
+    height: 100px;
+    resize: none;
+}
+
+#text{
+position: relative;
+top: -100px;
+} 
+
+#btnn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn1{
+    width: 60px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: rgb(58, 194, 58);
+    color: white;
+}
+
+#btn1:hover{
+    background:green;
+}
+
+#btn2{
+    width: 50px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: rgb(241, 69, 69);
+    color: white;
+}
+#btn2:hover{
+    background:red;
+}
+
+/***********************************************/
+#sec1 {
+    width: 80%;
+    height: 150px;
+    background-color: transparent;
+    position: relative;
+    margin: auto;
+    display: flex;
+    top: -30px;
+    justify-content: space-around;
+
+}
+
+.block {
+    width: 20%;
+    height: 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 100px;
+    color: white;
+    background: white;
+    border: 2px solid rgb(248, 225, 17);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#blockimg1 {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    background: url(../images/tennisacademy.jpg) no-repeat;
+    background-size: 100%;
+}
+
+#blockimg2 {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    background: url(../images/footballacademy.jpg) no-repeat;
+    background-size: 100%;
+}
+
+#blockimg3 {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    background: url(../images/swimmingacademy.jpg) no-repeat;
+    background-size: 100%;
+}
+
+#blockimg4 {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    background: url(../images/squashacademy.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.blocktext{
+    background:rgba(255, 255, 0,0.58);
+    clip-path: circle(0% at 0% 0%);
+    cursor: pointer;
+    position: absolute;
+    top:-30px;
+    width: 100%;
+    color:black;
+    padding: 20px;
+    overflow: hidden;
+    font-weight: bold;
+    transition: all 1s;
+}
+#blockimg1:hover .blocktext{
+    clip-path: circle(60% at 0% 0%);
+}
+
+#blockimg2:hover .blocktext{
+    clip-path: circle(60% at 0% 0%);
+}
+#blockimg3:hover .blocktext{
+    clip-path: circle(60% at 0% 0%);
+}
+#blockimg4:hover .blocktext{
+    clip-path: circle(60% at 0% 0%);
+}
+/***********************************************/
+#sec2 {
+    width: 80%;
+    height: 260px;
+    position: relative;
+    margin: auto;
+
+}
+
+.sectionheader {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+hr {
+    width: 40%;
+}
+
+.p1 {
+    text-align: center;
+    color: rgb(60, 5, 148);
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    margin: 0;
+}
+
+#sec22 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#sec2right {
+    width: 40%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+#sec2left {
+    width: 50%;
+    height: 200px;
+    margin: 0;
+}
+
+#h21 {
+    padding: 5px;
+    color: rgb(60, 5, 148);
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+#sec2p {
+    margin: 0;
+    padding-left: 30px;
+    color: rgb(60, 5, 148);
+}
+
+#aboutimg {
+    width: 40%;
+    height:  200px;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+
+/************************************************/
+#sec4 {
+    width: 80%;
+    height: 260px;
+    margin: auto;
+    padding: 10px;
+}
+
+#sec44 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+tr {
+    padding: 0;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(190, 187, 187);
+}
+
+/***********************************************/
+#sec3 {
+    width: 80%;
+    height: 360px;
+    margin: auto;
+    padding: 10px;
+
+}
+
+#sec33 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.block1 {
+    width: 30%;
+    height: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: black;
+    border: 2px solid rgb(53, 52, 52);
+    box-shadow: 1px 1px 8px rgb(92, 90, 90);
+    padding: 5px 5px 1px 5px;
+    margin: 20px;
+}
+
+.sec3img {
+    width: 100%;
+    height: 170px;
+}
+
+.blocktext2 {
+    height: 120px;
+    color: black;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.h22 {
+    height: 20px;
+    color: rgb(60, 5, 148);
+    margin: 0;
+    padding: 0;
+}
+
+.sec33p {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+/************************************************/
+#sec5 {
+    width: 79%;
+    height: 300px;
+    margin: auto;
+    background: rgb(248, 225, 17);
+}
+
+#sec55 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec5img {
+    height: 280px;
+    width: 500px;
+    padding-left: 15px;
+}
+
+video {
+    height: 280px;
+    width: 520px;
+    padding-right: 15px;
+}
+
+/***********************************************/
+#sec6 {
+    width: 100%;
+    height: 300px;
+    background: rgb(110, 110, 110);
+    display: flex;
+
+}
+
+iframe {
+    height: 150px;
+    border: 0;
+    flex-grow: 0;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+
+}
+
+/*****************************************************/
+footer {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background-color: rgb(31, 29, 29);
+    margin: 0;
+}
